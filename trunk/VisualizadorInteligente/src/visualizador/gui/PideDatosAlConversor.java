@@ -36,6 +36,7 @@ public class PideDatosAlConversor extends Thread {
      *   de la primera fila de la matriz que se pasa como segundo par�metro.
      * @modificar
      * Realizar cambios a la variable v
+     * Vale!!!
      */
     private void importDataFromMIT(Parametro[] parametros, float[][] datos, float[] fs) {
         JSMDataSource v = JSMDataSource.getJSWBManagerInstance();
