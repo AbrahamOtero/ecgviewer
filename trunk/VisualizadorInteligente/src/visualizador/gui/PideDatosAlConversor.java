@@ -35,6 +35,7 @@ public class PideDatosAlConversor extends Thread {
      *   la posici�n 0 de este array est� la frecuencia de muestreo del array
      *   de la primera fila de la matriz que se pasa como segundo par�metro.
      * @modificar
+     * Realizar cambios a la variable v
      */
     private void importDataFromMIT(Parametro[] parametros, float[][] datos, float[] fs) {
         JSMDataSource v = JSMDataSource.getJSWBManagerInstance();
