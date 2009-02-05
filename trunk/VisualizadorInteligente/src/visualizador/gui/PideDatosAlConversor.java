@@ -37,19 +37,19 @@ public class PideDatosAlConversor extends Thread {
      * @modificar
      */
     private void importDataFromMIT(Parametro[] parametros, float[][] datos, float[] fs) {
-        JSMDataSource v = JSMDataSource.getJSWBManagerInstance();
+        JSMDataSource jSMDataSource = JSMDataSource.getJSWBManagerInstance();
 
         for (int i = 0; i < parametros.length; i++) {
             if (fs[i] > 50) {
-                v.setEcg(datos[i]);
-                v.setEcgSamplingRate(fs[i]);
-                v.setEcgRangeMax(100);
-                v.setEcgRangeMinimum(-100);
+                jSMDataSource.setEcg(datos[i]);
+                jSMDataSource.setEcgSamplingRate(fs[i]);
+                jSMDataSource.setEcgRangeMax(100);
+                jSMDataSource.setEcgRangeMinimum(-100);
             } else {
-                v.setHeartRate(datos[i]);
-                v.setHrSamplingRate(fs[i]);
-                v.setHeartRateRangeMinimum(0);
-                v.setHeartRateRangeMax(100);
+                jSMDataSource.setHeartRate(datos[i]);
+                jSMDataSource.setHrSamplingRate(fs[i]);
+                jSMDataSource.setHeartRateRangeMinimum(0);
+                jSMDataSource.setHeartRateRangeMax(100);
             }
         }
     }
