@@ -45,8 +45,8 @@ public class VisorE extends javax.swing.JFrame {
         xPromedioLabel = new javax.swing.JLabel();
         xMaximoLabel = new javax.swing.JLabel();
         xMinimoLabel = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        xPeriodoLabel = new javax.swing.JLabel();
+        xPeriodo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -119,15 +119,15 @@ public class VisorE extends javax.swing.JFrame {
         xMinimoLabel.setFont(new java.awt.Font("Tahoma", 0, 14));
         xMinimoLabel.setText("Mínimo");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("Periodo mostrado:");
+        xPeriodoLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        xPeriodoLabel.setText("Periodo mostrado:");
 
-        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("0");
-        jLabel2.setOpaque(true);
+        xPeriodo.setBackground(new java.awt.Color(0, 0, 0));
+        xPeriodo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        xPeriodo.setForeground(new java.awt.Color(255, 255, 255));
+        xPeriodo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        xPeriodo.setText("0");
+        xPeriodo.setOpaque(true);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -168,10 +168,10 @@ public class VisorE extends javax.swing.JFrame {
                         .addGap(62, 62, 62))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1)
+                .addComponent(xPeriodoLabel)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(612, Short.MAX_VALUE))
+                .addComponent(xPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(572, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -195,8 +195,8 @@ public class VisorE extends javax.swing.JFrame {
                     .addComponent(xModa))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(xPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(xPeriodoLabel))
                 .addGap(20, 20, 20))
         );
 
@@ -216,8 +216,6 @@ public class VisorE extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel xDesviacionEstLabel;
     private javax.swing.JLabel xDesviacionStd;
     private javax.swing.JLabel xMaximo;
@@ -228,6 +226,8 @@ public class VisorE extends javax.swing.JFrame {
     private javax.swing.JLabel xMinimoLabel;
     private javax.swing.JLabel xModa;
     private javax.swing.JLabel xModaLabel;
+    private javax.swing.JLabel xPeriodo;
+    private javax.swing.JLabel xPeriodoLabel;
     private javax.swing.JLabel xPromedio;
     private javax.swing.JLabel xPromedioLabel;
     // End of variables declaration//GEN-END:variables
