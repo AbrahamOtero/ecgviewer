@@ -45,6 +45,8 @@ public class VisorE extends javax.swing.JFrame {
         xPromedioLabel = new javax.swing.JLabel();
         xMaximoLabel = new javax.swing.JLabel();
         xMinimoLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -52,7 +54,7 @@ public class VisorE extends javax.swing.JFrame {
         setResizable(false);
 
         xMedia.setBackground(new java.awt.Color(0, 0, 0));
-        xMedia.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        xMedia.setFont(new java.awt.Font("Tahoma", 0, 48));
         xMedia.setForeground(new java.awt.Color(0, 255, 0));
         xMedia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         xMedia.setText("0");
@@ -60,7 +62,7 @@ public class VisorE extends javax.swing.JFrame {
         xMedia.setOpaque(true);
 
         xDesviacionStd.setBackground(new java.awt.Color(0, 0, 0));
-        xDesviacionStd.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        xDesviacionStd.setFont(new java.awt.Font("Tahoma", 0, 48));
         xDesviacionStd.setForeground(new java.awt.Color(0, 255, 0));
         xDesviacionStd.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         xDesviacionStd.setText("0");
@@ -68,7 +70,7 @@ public class VisorE extends javax.swing.JFrame {
         xDesviacionStd.setOpaque(true);
 
         xModa.setBackground(new java.awt.Color(0, 0, 0));
-        xModa.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        xModa.setFont(new java.awt.Font("Tahoma", 0, 48));
         xModa.setForeground(new java.awt.Color(0, 255, 0));
         xModa.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         xModa.setText("0");
@@ -76,7 +78,7 @@ public class VisorE extends javax.swing.JFrame {
         xModa.setOpaque(true);
 
         xPromedio.setBackground(new java.awt.Color(0, 0, 0));
-        xPromedio.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        xPromedio.setFont(new java.awt.Font("Tahoma", 0, 48));
         xPromedio.setForeground(new java.awt.Color(0, 255, 0));
         xPromedio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         xPromedio.setText("0");
@@ -84,7 +86,7 @@ public class VisorE extends javax.swing.JFrame {
         xPromedio.setOpaque(true);
 
         xMaximo.setBackground(new java.awt.Color(0, 0, 0));
-        xMaximo.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        xMaximo.setFont(new java.awt.Font("Tahoma", 0, 48));
         xMaximo.setForeground(new java.awt.Color(0, 255, 0));
         xMaximo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         xMaximo.setText("0");
@@ -92,30 +94,40 @@ public class VisorE extends javax.swing.JFrame {
         xMaximo.setOpaque(true);
 
         xMinimo.setBackground(new java.awt.Color(0, 0, 0));
-        xMinimo.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        xMinimo.setFont(new java.awt.Font("Tahoma", 0, 48));
         xMinimo.setForeground(new java.awt.Color(0, 255, 0));
         xMinimo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         xMinimo.setText("0");
         xMinimo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         xMinimo.setOpaque(true);
 
-        xMediaLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        xMediaLabel.setFont(new java.awt.Font("Tahoma", 0, 14));
         xMediaLabel.setText("Media");
 
-        xDesviacionEstLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        xDesviacionEstLabel.setFont(new java.awt.Font("Tahoma", 0, 14));
         xDesviacionEstLabel.setText("Desviación Estandard");
 
-        xModaLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        xModaLabel.setFont(new java.awt.Font("Tahoma", 0, 14));
         xModaLabel.setText("Moda");
 
-        xPromedioLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        xPromedioLabel.setFont(new java.awt.Font("Tahoma", 0, 14));
         xPromedioLabel.setText("Promedio");
 
-        xMaximoLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        xMaximoLabel.setFont(new java.awt.Font("Tahoma", 0, 14));
         xMaximoLabel.setText("Máximo");
 
-        xMinimoLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        xMinimoLabel.setFont(new java.awt.Font("Tahoma", 0, 14));
         xMinimoLabel.setText("Mínimo");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setText("Periodo mostrado:");
+
+        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("0");
+        jLabel2.setOpaque(true);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -154,6 +166,12 @@ public class VisorE extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
                         .addComponent(xMinimoLabel)
                         .addGap(62, 62, 62))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(612, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,7 +193,11 @@ public class VisorE extends javax.swing.JFrame {
                     .addComponent(xMaximo)
                     .addComponent(xPromedio)
                     .addComponent(xModa))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addGap(20, 20, 20))
         );
 
         pack();
@@ -194,6 +216,8 @@ public class VisorE extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel xDesviacionEstLabel;
     private javax.swing.JLabel xDesviacionStd;
     private javax.swing.JLabel xMaximo;
