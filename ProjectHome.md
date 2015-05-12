@@ -1,0 +1,1 @@
+Develop a Swing based component to display ECG
